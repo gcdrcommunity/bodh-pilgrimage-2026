@@ -601,15 +601,19 @@
   <div class="reply-box" style="padding: 10px 0;">
     <div class="reply-title" style="margin-bottom: 10px;">🙏 有意願參加嗎？請填寫以下報名表</div>
     
-    <!-- 改用簡單的固定高度設定，直接解決空白問題 -->
-    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeZ3lMjP1v5R71-QQOw537hl5ZcYGCyq87GBZnvjJ8wfjfEWw/viewform?embedded=true" 
-            width="100%" 
-            frameborder="0" 
-            marginheight="0" 
-            marginwidth="0"
-            style="border: none;">
-            載入中…
-    </iframe>
+   <!-- 這裡將高度固定並加入 overflow: auto，讓表單在框內自己滑動 -->
+    <div style="width: 100%; height: 700px; overflow-y: auto; -webkit-overflow-scrolling: touch; border: 1px solid #ccc;">
+      <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeZ3lMjP1v5R71-QQOw537hl5ZcYGCyq87GBZnvjJ8wfjfEWw/viewform?embedded=true" 
+              width="100%" 
+              height="2000px" 
+              frameborder="0" 
+              marginheight="0" 
+              marginwidth="0"
+              style="border: none;">
+              載入中…
+      </iframe>
+    </div>
+    
   </div>
 </div>
 
