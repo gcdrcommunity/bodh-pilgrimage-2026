@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>菩提迦耶朝聖行 2026 · 住宿費用第一次收款通知</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700;900&family=Noto+Serif+TC:wght@600;700;900&display=swap" rel="stylesheet">
+<style>
+:root{
+  --saffron:#E8890C; --saffron-light:#F5A623;
+  --maroon:#7B1F2E; --maroon-light:#A33040;
+  --gold:#C9942A; --gold-light:#F0C65A;
+  --cream:#FFFCF6; --warm-white:#FFFFFF;
+  --dark:#2A1A0E; --text:#3D2B1A; --text-light:#6B4E35;
+  --green:#3A6B4A; --teal:#2E7D6B;
+  --line:#F0E2CC; --tint:#FFF9EE; --tint-green:#F2FAF6;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+body{
+  font-family:'Noto Sans TC','Microsoft JhengHei',sans-serif;
+  background:var(--cream); color:var(--text);
+  line-height:1.75; -webkit-text-size-adjust:100%;
+}
+.wrap{max-width:760px;margin:0 auto;padding:0 20px 72px}
+
+/* ---------- header ---------- */
+.hero{
+  background:linear-gradient(160deg,#FFF7E6 0%,#FFEDCE 52%,#FFE2AE 100%);
+  color:var(--maroon); text-align:center; padding:48px 20px 40px; margin-bottom:34px;
+  border-bottom:4px solid var(--gold-light);
+}
+.hero .wheel{font-size:30px;color:var(--saffron);line-height:1}
+.hero h1{
+  font-family:'Noto Serif TC',serif; font-weight:900;
+  font-size:clamp(25px,6vw,37px); letter-spacing:.04em; margin:12px 0 6px;
+}
+.hero .sub{
+  font-size:clamp(14px,3.4vw,17px); font-weight:700; color:var(--maroon-light);
+  letter-spacing:.06em; margin-bottom:16px;
+}
+.hero .meta{font-size:14px;color:var(--text-light);line-height:2}
+.hero .meta strong{font-weight:700;color:var(--text);letter-spacing:.03em}
+
+/* ---------- shared ---------- */
+h2{
+  font-family:'Noto Serif TC',serif; font-size:21px; font-weight:700;
+  color:var(--maroon); margin:40px 0 16px;
+  padding-bottom:9px; border-bottom:2px solid var(--line);
+}
+h2:first-of-type{margin-top:0}
+h3{font-size:16px;font-weight:700;color:var(--text);margin:22px 0 9px}
+p{margin:11px 0}
+ul{margin:11px 0;padding-left:21px}
+li{margin:6px 0}
+strong{font-weight:700;color:var(--dark)}
+.note{font-size:13.5px;color:var(--text-light);margin-top:9px}
+
+.card{
+  background:var(--warm-white); border:1px solid var(--line);
+  border-radius:13px; padding:20px 22px; margin:16px 0;
+}
+
+/* ---------- timeline ---------- */
+.tl{list-style:none;margin:18px 0 6px;padding:0;position:relative}
+.tl::before{
+  content:''; position:absolute; left:9px; top:12px; bottom:12px;
+  width:2px; background:var(--line);
+}
+.tl li{position:relative;padding:0 0 20px 36px;margin:0}
+.tl li:last-child{padding-bottom:0}
+.dot{
+  position:absolute; left:0; top:6px; width:20px; height:20px;
+  border-radius:50%; background:var(--cream);
+  border:3px solid var(--line); z-index:1;
+}
+.step{
+  background:var(--warm-white); border:1px solid var(--line);
+  border-radius:11px; padding:13px 16px;
+}
+.step .when{
+  font-size:13px; font-weight:700; color:var(--text-light);
+  letter-spacing:.02em; margin-bottom:3px;
+}
+.step .what{font-size:17px;font-weight:700;color:var(--dark);line-height:1.5}
+.step .desc{font-size:13.5px;color:var(--text-light);margin-top:5px;line-height:1.65}
+
+/* 目前階段 */
+.tl li.now .dot{background:var(--saffron);border-color:#FFD98A;
+  box-shadow:0 0 0 5px rgba(232,137,12,.18)}
+.tl li.now .step{
+  background:linear-gradient(165deg,#FFFDF6,#FFF4DE); border:2px solid var(--saffron);
+  box-shadow:0 3px 16px rgba(232,137,12,.16);
+}
+.tl li.now .when{color:#B36A08}
+.tl li.done .dot{background:var(--line);border-color:var(--line)}
+
+.badge{
+  display:inline-block; font-size:11.5px; font-weight:700; letter-spacing:.09em;
+  padding:3px 10px; border-radius:999px; margin-bottom:7px;
+}
+.b-now{background:var(--saffron);color:#fff}
+.b-next{background:var(--tint-green);color:var(--teal);border:1px solid #B8DCCB}
+.b-tbd{background:#FFF5F5;color:var(--maroon-light);border:1px solid #F0D0D5}
+.b-plan{background:#F3EDE3;color:var(--text-light);border:1px solid var(--line)}
+
+/* ---------- amount ---------- */
+.amt{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:18px 0}
+.amt .box{
+  background:linear-gradient(165deg,#FFFDF6,#FFF2D8);
+  border:2px solid var(--gold-light); border-radius:13px;
+  padding:20px 14px; text-align:center;
+}
+.amt .box .rt{font-size:14.5px;font-weight:700;color:var(--text-light)}
+.amt .box .n{
+  font-family:'Noto Serif TC',serif; font-size:clamp(28px,7.5vw,36px);
+  font-weight:900; color:var(--maroon); line-height:1.25; margin-top:5px;
+}
+.amt .box .cur{font-size:14px;font-weight:700;color:var(--text-light)}
+@media(max-width:460px){.amt{grid-template-columns:1fr}}
+
+.due{
+  background:linear-gradient(135deg,var(--saffron),var(--gold-light)); color:#4A2E05; border-radius:11px;
+  padding:13px 18px; text-align:center; font-weight:700;
+  font-size:16px; letter-spacing:.02em; margin:16px 0;
+}
+
+/* ---------- table ---------- */
+.scroll{overflow-x:auto;-webkit-overflow-scrolling:touch;margin:15px 0}
+table{border-collapse:collapse;width:100%;font-size:14.5px;min-width:400px}
+th,td{padding:10px 13px;border-bottom:1px solid var(--line);text-align:left}
+th{background:var(--tint);font-weight:700;color:var(--maroon);white-space:nowrap}
+td.num,th.num{text-align:right;font-variant-numeric:tabular-nums;white-space:nowrap}
+tr.total td{font-weight:700;background:var(--tint);border-bottom:2px solid var(--gold-light)}
+tr:last-child td{border-bottom:none}
+.bank td:first-child{width:32%;font-weight:700;color:var(--text-light);white-space:nowrap}
+.bank td:last-child{font-size:16px;font-weight:700;color:var(--dark);letter-spacing:.03em}
+
+/* ---------- two col ---------- */
+.two{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:16px 0}
+@media(max-width:560px){.two{grid-template-columns:1fr}}
+.inc{background:var(--tint-green);border:1px solid #C8E4D6;border-radius:12px;padding:16px 18px}
+.exc{background:#FFF5F5;border:1px solid #F0D8DC;border-radius:12px;padding:16px 18px}
+.inc h3,.exc h3{margin:0 0 8px;font-size:15.5px}
+.inc h3{color:var(--green)} .exc h3{color:var(--maroon-light)}
+.inc ul,.exc ul{margin:0;padding-left:19px;font-size:14px}
+
+.warn{
+  background:var(--tint); border-left:4px solid var(--saffron);
+  border-radius:0 10px 10px 0; padding:13px 17px; margin:15px 0; font-size:14.5px;
+}
+.self{
+  display:inline-block; background:var(--tint-green); color:var(--teal);
+  border:1px solid #B8DCCB; border-radius:7px;
+  padding:8px 13px; font-size:13.5px; font-weight:700; margin-top:11px;
+}
+
+.foot{
+  text-align:center; margin-top:44px; padding-top:26px;
+  border-top:2px solid var(--line);
+}
+.foot .grp{
+  display:inline-block; background:var(--warm-white); border:1px solid var(--line);
+  border-radius:11px; padding:14px 24px; font-size:15px;
+}
+.foot .grp b{display:block;font-size:17px;color:var(--maroon);margin-top:3px}
+.foot .bless{
+  font-family:'Noto Serif TC',serif; font-size:16px; font-weight:700;
+  color:var(--gold); margin-top:22px; letter-spacing:.05em;
+}
+
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --cream:#1B1410; --warm-white:#241B14; --text:#E8D8C0; --text-light:#B89E80;
+    --dark:#FFF3DC; --line:#4A3A2A; --tint:#332417; --tint-green:#1E2E26;
+    --maroon:#D98A98; --maroon-light:#E5A0AC; --gold:#E8C97A;
+  }
+  :root:not([data-theme="light"]) .hero{background:linear-gradient(160deg,#3A2415,#2A1A0E);border-bottom-color:#6B4E35}
+  :root:not([data-theme="light"]) .amt .box{background:linear-gradient(165deg,#33240F,#2A1D0C)}
+  :root:not([data-theme="light"]) .due{background:linear-gradient(135deg,#B36A08,#8A5206);color:#FFF3DC}
+  :root:not([data-theme="light"]) .inc{background:#1E2E26;border-color:#2F4A3C}
+  :root:not([data-theme="light"]) .exc{background:#33191D;border-color:#5A2C33}
+  :root:not([data-theme="light"]) .foot .grp{background:#241B14}
+}
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="wheel">☸</div>
+  <h1>菩提迦耶朝聖行 2026</h1>
+  <div class="sub">住宿費用第一次收款通知</div>
+  <div class="meta">
+    <strong>2026 年 9 月 22 日 － 9 月 28 日</strong><br>
+    ✦ 噶奇美多傑仁波切帶領 ✦<br>
+    光明洲實修中心
+  </div>
+</header>
+
+<div class="wrap">
+
+  <h2>📅 時程</h2>
+  <ul class="tl">
+    <li class="now">
+      <span class="dot"></span>
+      <div class="step">
+        <span class="badge b-now">目前階段</span>
+        <div class="when">即日起 － 8/23（日）</div>
+        <div class="what">繳交房費訂金</div>
+        <div class="desc">雙人房每人 TWD 2,200、單人房 TWD 4,500，匯款至中心帳戶。中心須於 8/24（一）將訂金匯給飯店，<strong>請務必於本週日前完成</strong>。</div>
+      </div>
+    </li>
+    <li>
+      <span class="dot"></span>
+      <div class="step">
+        <span class="badge b-next">下一步</span>
+        <div class="when">8/24（一）</div>
+        <div class="what">中心匯出飯店訂金</div>
+        <div class="desc">將菩提迦耶飯店的 25% 訂金匯出，房間正式保留。</div>
+      </div>
+    </li>
+    <li>
+      <span class="dot"></span>
+      <div class="step">
+        <span class="badge b-next">下一步</span>
+        <div class="when">8/24（一） 起</div>
+        <div class="what">辦理簽證與旅行平安險</div>
+        <div class="desc">中心協助聯繫旅行社與保險業務員，費用由各位直接向對方繳付，不經中心代收。</div>
+      </div>
+    </li>
+    <li>
+      <span class="dot"></span>
+      <div class="step">
+        <span class="badge b-tbd">日期待確認</span>
+        <div class="when">9/5（六） － 9/6（日）</div>
+        <div class="what">行前說明會</div>
+        <div class="desc">行程細節、隨身物品、當地注意事項。確切時間與地點另行公告。</div>
+      </div>
+    </li>
+    <li>
+      <span class="dot"></span>
+      <div class="step">
+        <span class="badge b-plan">預定</span>
+        <div class="when">9/14（一） － 9/18（五）</div>
+        <div class="what">第二次繳款</div>
+        <div class="desc">菩提迦耶房費餘款 75% ＋ 當地包車費用。金額於群組另行通知。</div>
+      </div>
+    </li>
+    <li>
+      <span class="dot"></span>
+      <div class="step">
+        <div class="when">9/22（二）</div>
+        <div class="what">出發</div>
+        <div class="desc">桃園機場集合，當晚加爾各答過夜。</div>
+      </div>
+    </li>
+  </ul>
+
+  <h2>💰 本次應繳金額</h2>
+  <div class="amt">
+    <div class="box">
+      <div class="rt">雙人房（每人）</div>
+      <div class="n">2,200</div>
+      <div class="cur">TWD</div>
+    </div>
+    <div class="box">
+      <div class="rt">單人房</div>
+      <div class="n">4,500</div>
+      <div class="cur">TWD</div>
+    </div>
+  </div>
+  <div class="due">📅 繳款期限：8 月 23 日（日）</div>
+
+  <h3>🏦 匯款帳戶</h3>
+  <div class="scroll">
+    <table class="bank">
+      <tr><td>戶名</td><td>社團法人光明洲實修中心協會</td></tr>
+      <tr><td>匯款銀行</td><td>玉山銀行（代碼 808）</td></tr>
+      <tr><td>匯款帳號</td><td>0484940130781</td></tr>
+    </table>
+  </div>
+  <p class="note">匯款後請於 LINE 群組回報<strong>姓名與帳號末五碼</strong>，以便對帳。</p>
+
+  <h2>📌 本次收的是什麼</h2>
+  <div class="card">
+    <h3>1. 加爾各答轉機飯店　9/22（二）1 晚　｜　全額</h3>
+    <p>NORTHIN Hotel Kolkata Airport，含早餐。這一晚金額不高，直接一次收足。</p>
+    <h3>2. 菩提迦耶飯店　9/23（三） － 9/27（日）4 晚　｜　房費訂金 25%</h3>
+    <p><strong>Niranjana Hotel Bodhgaya</strong>，Deluxe Room，含早、午、晚三餐素食自助餐。飯店須先付訂金保留房間，故先收 25%。</p>
+  </div>
+
+  <h2>📌 之後還會收一次</h2>
+  <p>出發前會再通知第二次繳款，內容為<strong>菩提迦耶房費餘款 75% ＋ 當地包車費用</strong>。</p>
+  <div class="scroll">
+    <table>
+      <tr><th>房型</th><th class="num">預估金額</th></tr>
+      <tr><td>雙人房（每人）</td><td class="num">約 TWD 5,400</td></tr>
+      <tr><td>單人房</td><td class="num">約 TWD 9,300</td></tr>
+    </table>
+  </div>
+  <div class="warn">
+    ⚠️ <strong>包車費用於當地現場付現，目前金額為上限估算。</strong> 16 人座包車以最遠行程估算全程 42,000 盧比，每人約 TWD 1,400，<strong>實際費用預計會低於此數</strong>。款項隨第二次繳款一併收取，由中心到當地統一支付車行，各位不需自行付款，回國後結算<strong>多退少補</strong>。匯率差與刷卡手續費也於第二次收款時一併結清。
+  </div>
+
+  <h2>📊 住宿與交通費用明細</h2>
+  <p class="note">以下為全程費用，兩次收款合計。</p>
+  <div class="scroll">
+    <table>
+      <tr>
+        <th>項目</th><th class="num">雙人房（每人）</th><th class="num">單人房</th>
+      </tr>
+      <tr><td>加爾各答 1 晚（含早餐）</td><td class="num">2,618 盧比</td><td class="num">5,478 盧比</td></tr>
+      <tr><td>菩提迦耶 4 晚（含三餐）</td><td class="num">15,645 盧比</td><td class="num">31,290 盧比</td></tr>
+      <tr><td>當地包車（上限估算，每人）</td><td class="num">4,200 盧比</td><td class="num">4,200 盧比</td></tr>
+      <tr class="total"><td>合計</td><td class="num">22,463 盧比</td><td class="num">40,968 盧比</td></tr>
+      <tr class="total"><td>約合台幣</td><td class="num">約 7,500</td><td class="num">約 13,600</td></tr>
+    </table>
+  </div>
+  <p class="note">匯率以 1 盧比 ≈ 0.333 台幣估算，實際依刷卡當日匯率結算。</p>
+
+  <div class="two">
+    <div class="inc">
+      <h3>🌿 費用已包含</h3>
+      <ul>
+        <li>加爾各答轉機飯店 1 晚，含早餐</li>
+        <li>菩提迦耶 Niranjana Hotel Bodhgaya 4 晚，含三餐素食自助餐</li>
+        <li>9/23 迦耶機場接機</li>
+        <li>9/24 － 9/26 朝聖行程包車</li>
+        <li>9/27 迦耶機場送機</li>
+      </ul>
+    </div>
+    <div class="exc">
+      <h3>❗ 費用不包含</h3>
+      <ul>
+        <li>國際與國內線機票（旅行社協助各自開票）</li>
+        <li>印度簽證代辦費、旅行平安險</li>
+        <li>飯店未含之餐食（移動日與轉機日的部分餐食）</li>
+        <li>個人消費、小費、供養金</li>
+      </ul>
+    </div>
+  </div>
+
+  <h2>🛂 印度簽證代辦（個人自付）</h2>
+  <div class="scroll">
+    <table>
+      <tr><th>簽證種類</th><th class="num">代辦費用</th></tr>
+      <tr><td>一個月觀光簽</td><td class="num">TWD 1,300</td></tr>
+      <tr><td>一年多次簽（可選）</td><td class="num">TWD 1,800</td></tr>
+    </table>
+  </div>
+  <h3>應備資料</h3>
+  <ul>
+    <li>護照電子檔（清晰不反光，有效期距出發日須 180 天以上）</li>
+    <li>5 x 5 公分白底彩色照片 2 張（近六個月內，印度簽證專用正方形規格）</li>
+    <li>本人姓名、電話、地址</li>
+    <li>父母姓名及出生地</li>
+    <li>配偶姓名及出生地（無則免填）</li>
+    <li>緊急聯絡人姓名、關係、電話、地址</li>
+    <li>公司名稱、電話、地址（退休者填退休前資訊，出家師父填寺院資訊）</li>
+  </ul>
+  <div class="self">中心協助聯繫旅行社，代辦費由各位直接向旅行社刷卡繳付，不經中心代收</div>
+  <p class="note">詳細填寫說明將於 LINE 群組另行提供。</p>
+
+  <h2>🛡️ 旅行平安險（個人自付）</h2>
+  <p>承保公司：第一產物保險。印度當地醫療資源有限，請務必確保持有有效旅行平安險（含海外急病住院醫療），保障自身與同行法友的安全。</p>
+  <div class="scroll">
+    <table>
+      <tr><th>保障內容</th><th class="num">費用</th></tr>
+      <tr>
+        <td>人身意外（身故／失能 1,000 萬）、海外醫療 100 萬、旅遊不便</td>
+        <td class="num">TWD 1,632</td>
+      </tr>
+    </table>
+  </div>
+  <div class="self">中心協助聯繫保險業務員，保費由各位直接向業務員刷卡繳付，不經中心代收</div>
+  <p class="note">已自行投保者請提供保單影本，免另行投保。</p>
+
+  <h2>🔔 幾件要記得的事</h2>
+  <div class="card">
+    <ul>
+      <li><strong>抵達加爾各答飯店時須付押金 5,000 盧比</strong>（現金），退房時全額退還。請備妥小面額現金。</li>
+      <li>菩提迦耶 4 天三餐全包，期間不需另外準備伙食費。</li>
+      <li>房型分配與同房夥伴將於 LINE 群組另行說明。</li>
+    </ul>
+  </div>
+
+  <div class="foot">
+    <div class="grp">
+      有問題請於 LINE 群組提出
+      <b>2026 GCDR菩提伽耶團</b>
+    </div>
+    <div class="bless">☸ 願此行順利圓滿，眾生同霑法益 ☸</div>
+  </div>
+
+</div>
+</body>
+</html>
