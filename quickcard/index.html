@@ -52,6 +52,14 @@ table{border-collapse:collapse;width:100%;font-size:0.96rem}
 td,th{padding:.3rem .45rem;border-bottom:1px solid var(--rule);text-align:left;vertical-align:top;line-height:1.5}
 th{font-family:var(--mono);font-size:0.78rem;letter-spacing:.08em;color:var(--muted);text-transform:uppercase;font-weight:600}
 td.n{font-family:var(--mono);font-variant-numeric:tabular-nums;white-space:nowrap}
+@media (max-width:600px){
+  .card table,.card tbody,.card tr,.card td{display:block;width:auto}
+  .card thead{display:none}
+  .card tr{padding:.5rem 0;border-bottom:1px solid var(--rule)}
+  .card tr:last-child{border-bottom:none}
+  .card td{border:0;padding:0}
+  .card td.n{white-space:normal;color:var(--maroon);font-weight:700;margin-bottom:.15rem}
+}
 tr:last-child td{border-bottom:none}
 b{font-weight:700}
 .hl{color:var(--maroon);font-weight:700}

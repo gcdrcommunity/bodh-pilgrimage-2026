@@ -53,6 +53,13 @@ h2{font-family:var(--serif);font-size:1.35rem;margin:2.6rem 0 1rem;padding-top:1
 .now td{padding:.35rem .5rem .35rem 0;border-bottom:1px solid var(--rule);vertical-align:top}
 .now tr:last-child td{border-bottom:none}
 .now td.d{font-family:var(--mono);font-weight:600;color:var(--maroon);white-space:nowrap;padding-right:1rem}
+@media (max-width:600px){
+  .now table,.now tbody,.now tr,.now td{display:block;width:auto}
+  .now tr{padding:.6rem 0;border-bottom:1px solid var(--rule)}
+  .now tr:last-child{border-bottom:none}
+  .now td{border:0;padding:0}
+  .now td.d{white-space:normal;margin-bottom:.2rem;padding-right:0}
+}
 
 footer{margin-top:3rem;padding:1.6rem 0 3rem;border-top:1px solid var(--rule);color:var(--muted);font-size:.9rem}
 footer .om{font-family:var(--serif);color:var(--maroon);font-size:1.05rem;margin-bottom:.7rem}
