@@ -1,0 +1,377 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<style>html{color-scheme:light dark}body{margin:0}img{max-width:100%}</style>
+<title>菩提迦耶朝聖總行程</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@700&family=Noto+Sans+TC:wght@400;500;700&family=IBM+Plex+Mono:wght@400;600&display=swap">
+<style>
+:root{
+  --paper:#FFFFFF;--sunk:#F3F2ED;--ink:#141210;--ink-2:#48433B;--muted:#726C61;
+  --rule:#CFCABE;--maroon:#7C2D2D;--maroon-s:#F4E7E4;--ochre:#9A6A17;--ochre-s:#F8F0DE;
+  --serif:"Noto Serif TC",serif;--sans:"Noto Sans TC","PingFang TC",sans-serif;
+  --mono:"IBM Plex Mono",Menlo,monospace;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --paper:#14120E;--sunk:#221F19;--ink:#F2EDE2;--ink-2:#CFC7B7;--muted:#948C7C;
+  --rule:#3B362B;--maroon:#E29B8D;--maroon-s:#38201C;--ochre:#DBAE60;--ochre-s:#372B15;
+}}
+:root[data-theme="dark"]{
+  --paper:#14120E;--sunk:#221F19;--ink:#F2EDE2;--ink-2:#CFC7B7;--muted:#948C7C;
+  --rule:#3B362B;--maroon:#E29B8D;--maroon-s:#38201C;--ochre:#DBAE60;--ochre-s:#372B15;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--sans);font-size:15px;line-height:1.6}
+.sheet{max-width:54rem;margin:0 auto;padding:1.4rem 1.25rem 3rem}
+
+.top{border-bottom:3px solid var(--maroon);padding-bottom:.75rem;margin-bottom:1rem}
+.top .who{font-family:var(--mono);font-size:0.82rem;letter-spacing:.12em;color:var(--maroon);margin:0 0 .3rem}
+.top h1{font-family:var(--serif);font-size:1.7rem;margin:0 0 .25rem;line-height:1.25}
+.top p{margin:0;color:var(--ink-2);font-size:0.99rem}
+
+.meetbar{
+  display:flex;flex-wrap:wrap;gap:.4rem 1.4rem;align-items:baseline;
+  background:var(--maroon-s);border-left:4px solid var(--maroon);
+  padding:.7rem .9rem;margin:0 0 1.1rem;border-radius:0 3px 3px 0;
+}
+.meetbar .lbl{font-family:var(--mono);font-size:0.80rem;letter-spacing:.12em;color:var(--maroon);font-weight:600}
+.meetbar .val{font-family:var(--mono);font-size:1.09rem;font-weight:600;font-variant-numeric:tabular-nums}
+.meetbar .sub{font-size:0.96rem;color:var(--ink-2)}
+
+table.itin{border-collapse:collapse;width:100%;margin:0 0 1.2rem}
+table.itin th{
+  font-family:var(--mono);font-size:0.78rem;letter-spacing:.1em;text-transform:uppercase;
+  color:var(--muted);font-weight:600;text-align:left;padding:.35rem .55rem;
+  border-bottom:2px solid var(--ink-2);
+}
+table.itin td{padding:.45rem .55rem;border-bottom:1px solid var(--rule);vertical-align:top;line-height:1.55;font-size:0.98rem}
+table.itin td.when{font-family:var(--mono);font-variant-numeric:tabular-nums;white-space:nowrap;font-weight:600;color:var(--maroon);width:9.5rem}
+table.itin td.when em{display:block;font-style:normal;font-weight:400;color:var(--muted);font-size:0.90rem}
+table.itin td.where{color:var(--ink-2);width:14rem}
+table.itin tr.stay td{
+  background:var(--ochre-s);border-bottom:1px solid var(--rule);
+  font-size:0.96rem;line-height:1.6;padding:.6rem .7rem;
+}
+table.itin tr.stay b{color:var(--ochre)}
+table.itin tr.fly td.when{color:var(--ink)}
+.flt{font-family:var(--mono);font-weight:600}
+
+h2{
+  font-family:var(--sans);font-size:0.88rem;font-weight:700;letter-spacing:.12em;
+  margin:1.8rem 0 .6rem;color:var(--paper);background:var(--maroon);
+  display:inline-block;padding:.22rem .6rem .18rem;border-radius:3px;
+}
+.cols{display:grid;grid-template-columns:repeat(auto-fit,minmax(16rem,1fr));gap:.9rem}
+table.plain{border-collapse:collapse;width:100%;font-size:0.96rem}
+table.plain td,table.plain th{padding:.32rem .5rem;border-bottom:1px solid var(--rule);text-align:left;vertical-align:top}
+table.plain th{font-family:var(--mono);font-size:0.78rem;letter-spacing:.08em;color:var(--muted);text-transform:uppercase;font-weight:600}
+table.plain td.n{font-family:var(--mono);font-variant-numeric:tabular-nums;white-space:nowrap;width:2rem;color:var(--muted)}
+.note{background:var(--sunk);border-radius:3px;padding:.7rem .85rem;font-size:0.96rem;margin:.8rem 0 0;line-height:1.6}
+.foot{margin-top:1.4rem;padding-top:.7rem;border-top:1px solid var(--rule);color:var(--muted);font-size:0.90rem;text-align:center}
+
+/* ---------- 打包清單頁 ---------- */
+.packpage{margin-top:2.4rem;padding-top:1.6rem;border-top:3px solid var(--maroon)}
+.packpage .ptop{display:flex;justify-content:space-between;align-items:baseline;flex-wrap:wrap;gap:.4rem;margin-bottom:.2rem}
+.packpage h1{font-family:var(--serif);font-size:1.45rem;margin:0}
+.packpage .hint{color:var(--ink-2);font-size:.95rem;margin:0 0 1.1rem}
+.packcols{columns:2;column-gap:1.8rem}
+@media (max-width:620px){.packcols{columns:1}}
+.packgrp{break-inside:avoid;margin:0 0 1rem}
+.packgrp h3{
+  font-family:var(--sans);font-size:.98rem;font-weight:700;margin:0 0 .35rem;
+  padding-bottom:.22rem;border-bottom:1px solid var(--rule);
+}
+.packgrp h3 em{font-style:normal;font-weight:400;color:var(--muted);font-size:.85rem;margin-left:.4rem}
+.packgrp ul{list-style:none;margin:0;padding:0}
+.packgrp li{
+  position:relative;padding:.24rem 0 .24rem 1.5rem;font-size:.94rem;line-height:1.5;
+}
+.packgrp li::before{
+  content:"";position:absolute;left:0;top:.48rem;
+  width:.85rem;height:.85rem;border:1.4px solid var(--muted);border-radius:2px;
+}
+.packgrp li small{display:block;color:var(--muted);font-size:.83rem;line-height:1.45}
+
+/* ---------- 列印與下載 ---------- */
+.acts{display:flex;gap:.45rem;flex-wrap:wrap;align-items:center}
+.actbtn{
+  display:inline-flex;align-items:center;gap:.35rem;
+  font-family:var(--sans);font-size:.88rem;font-weight:600;line-height:1.4;
+  color:var(--maroon);background:transparent;border:1.5px solid var(--maroon);
+  border-radius:999px;padding:.3rem .8rem;cursor:pointer;text-decoration:none;
+}
+.actbtn:hover{background:var(--maroon);color:var(--paper)}
+.actbtn:focus-visible{outline:2px solid var(--ochre);outline-offset:2px}
+@media print{.acts{display:none!important}}
+
+@media print{
+  @page{size:A4;margin:11mm}
+  :root{--paper:#fff;--sunk:#f3f3f1;--ink:#000;--ink-2:#222;--muted:#555;--rule:#999;
+        --maroon:#6E2626;--maroon-s:#f6ecea;--ochre:#7d5612;--ochre-s:#f7f1e2}
+  body{font-size:9.3pt;line-height:1.45}
+  .sheet{max-width:none;padding:0}
+  table.itin td,table.itin th{padding:1.1mm 1.5mm;font-size:8.7pt}
+  table.itin td.when{width:26mm}
+  table.itin td.where{width:38mm}
+  tr{break-inside:avoid}
+  h2{break-after:avoid}
+  .top h1{font-size:16pt}
+  .packpage{break-before:page;border-top:none;margin-top:0;padding-top:0}
+  .packcols{columns:2;column-gap:8mm}
+  .packgrp li{font-size:8.6pt;padding-top:.7mm;padding-bottom:.7mm}
+  .packgrp h3{font-size:9.4pt}
+}
+</style>
+</head>
+<body>
+
+
+<div class="sheet">
+
+<div class="top">
+  <p class="who">光明洲實修中心　‧　噶奇美多傑仁波切帶領</p>
+  <h1>2026 菩提迦耶朝聖　總行程</h1>
+  <p>2026 年 9 月 22 日（二）至 9 月 28 日（一）　‧　印度加爾各答 Kolkata、菩提迦耶 Bodh Gaya</p>
+  <p class="acts" style="margin-top:.7rem"><button class="actbtn" type="button" onclick="window.print()">🖨 列印</button><a class="actbtn" href="../files/菩提迦耶總行程_20260905.pdf" download>⬇ 下載 PDF</a></p>
+</div>
+
+<div class="meetbar">
+  <span class="lbl">集合</span>
+  <span class="val">9/22（二）10:30–11:00</span>
+  <span class="sub">桃園國際機場第一航廈。看出境看板找 <b>TG633</b> 的報到櫃檯</span>
+</div>
+
+<table class="itin">
+  <thead>
+    <tr><th>日期與時間</th><th>內容</th><th>地點</th></tr>
+  </thead>
+  <tbody>
+    <tr class="fly">
+      <td class="when">9/22 二<em>14:05–16:50</em></td>
+      <td><span class="flt">TG633</span>　泰國航空</td>
+      <td class="where">桃園 TPE — 曼谷 BKK</td>
+    </tr>
+    <tr>
+      <td class="when">9/22 二<em>16:50–23:45</em></td>
+      <td>曼谷轉機，近七小時。<b>晚餐自理</b></td>
+      <td class="where">曼谷素萬那普機場</td>
+    </tr>
+    <tr class="fly">
+      <td class="when">9/22 二<em>23:45–00:45</em></td>
+      <td><span class="flt">TG313</span>　泰國航空</td>
+      <td class="where">曼谷 BKK — 加爾各答 CCU</td>
+    </tr>
+
+    <tr class="stay">
+      <td colspan="3">🔖　<b>9/22–9/23 加爾各答住宿：NORTHIN Hotel Kolkata Airport</b>（1 晚，含早餐）<br>
+      176 Pulin Avenue, Kolkata 700081　‧　+91 87778 00177　‧　距機場約十分鐘</td>
+    </tr>
+
+    <tr>
+      <td class="when">9/23 三<em>00:45</em></td>
+      <td>抵達。入境、按指紋、<b>領行李出關</b>，前往飯店</td>
+      <td class="where">加爾各答機場</td>
+    </tr>
+    <tr>
+      <td class="when">9/23 三<em>12:00</em></td>
+      <td>退房。13:15 出發往機場，<b>IndiGo 報到 14:30 截止</b></td>
+      <td class="where">NORTHIN Hotel</td>
+    </tr>
+    <tr class="fly">
+      <td class="when">9/23 三<em>15:30–16:30</em></td>
+      <td><span class="flt">6E5253</span>　IndiGo，直飛一小時</td>
+      <td class="where">加爾各答 CCU — 迦耶 GAY</td>
+    </tr>
+    <tr>
+      <td class="when">9/23 三<em>傍晚</em></td>
+      <td>包車接機，入住、安頓、採買日用品。<br>想去大塔的人可自由前往（開放至 21:00）</td>
+      <td class="where">菩提迦耶</td>
+    </tr>
+
+    <tr class="stay">
+      <td colspan="3">🔖　<b>9/23–9/27 菩提迦耶住宿：Niranjana Hotel Bodhgaya</b>（4 晚，含早、午、晚三餐素食自助餐）<br>
+      Domuhan-Bodhgaya Rd, Bodh Gaya, Bihar 824231　‧　+91 631 2200475　‧　步行約十一分鐘到大塔</td>
+    </tr>
+
+    <tr>
+      <td class="when">9/24 四<em>05:00</em></td>
+      <td>晨供。供養法衣與水果，祈願、短時禪修<br>
+      <b>手機不可帶進塔區，入口寄物；塔區內禁止穿鞋</b></td>
+      <td class="where">摩訶菩提大塔<br>Mahabodhi Temple</td>
+    </tr>
+    <tr>
+      <td class="when">9/24 四<em>07:30</em></td>
+      <td>早餐</td>
+      <td class="where">飯店</td>
+    </tr>
+    <tr>
+      <td class="when">9/24 四<em>上午</em></td>
+      <td>參訪苦行洞，佛陀六年苦行之處</td>
+      <td class="where">苦行洞<br>Dungeshwari Cave</td>
+    </tr>
+    <tr>
+      <td class="when">9/24 四<em>回程</em></td>
+      <td>順道參訪。牧羊女善生供養佛陀乳糜之處。午餐後休息</td>
+      <td class="where">善生塔<br>Sujata Stupa</td>
+    </tr>
+    <tr>
+      <td class="when">9/24 四<em>傍晚</em></td>
+      <td>供燈、參拜</td>
+      <td class="where">摩訶菩提大塔</td>
+    </tr>
+
+    <tr>
+      <td class="when">9/25 五<em>全天</em></td>
+      <td>清晨出發。佛陀宣說《法華經》之處，以及古印度最大的佛教學院遺址。<br>
+      來回約兩百公里，<b>車程來回至少四小時，午餐在外</b>。<br>
+      會暈車的人請在上車前半小時吃藥</td>
+      <td class="where">靈鷲山 Vulture Peak<br>（王舍城 Rajgir）<br>那爛陀 Nālandā</td>
+    </tr>
+
+    <tr>
+      <td class="when">9/26 六<em>清晨</em></td>
+      <td>參拜</td>
+      <td class="where">摩訶菩提大塔</td>
+    </tr>
+    <tr>
+      <td class="when">9/26 六<em>其餘時間</em></td>
+      <td><b>行程由仁波切安排，前一天宣布。</b>整理行李</td>
+      <td class="where">菩提迦耶</td>
+    </tr>
+
+    <tr>
+      <td class="when">9/27 日<em>早上</em></td>
+      <td>早餐、退房，包車送機。<b>IndiGo 報到 10:30 截止</b></td>
+      <td class="where">迦耶機場</td>
+    </tr>
+    <tr class="fly">
+      <td class="when">9/27 日<em>11:30–12:35</em></td>
+      <td><span class="flt">6E6157</span>　IndiGo</td>
+      <td class="where">迦耶 GAY — 加爾各答 CCU</td>
+    </tr>
+
+    <tr class="stay">
+      <td colspan="3">🔖　<b>9/27 加爾各答白天休息</b>　<b style="color:var(--maroon)">暫定</b><br>
+      中心安排機場旁飯店的午餐，並加訂房間讓大家梳洗休息、放行李。<b>飯店與費用確定後在群組通知，費用可能另計。</b><br>
+      約 22:00 回機場，<b>泰航 23:00 開櫃報到</b></td>
+    </tr>
+
+    <tr class="fly">
+      <td class="when">9/28 一<em>02:00–06:10</em></td>
+      <td><span class="flt">TG314</span>　泰國航空</td>
+      <td class="where">加爾各答 CCU — 曼谷 BKK</td>
+    </tr>
+    <tr class="fly">
+      <td class="when">9/28 一<em>08:25–13:05</em></td>
+      <td><span class="flt">TG632</span>　泰國航空。<b>抵達桃園</b></td>
+      <td class="where">曼谷 BKK — 桃園 TPE</td>
+    </tr>
+  </tbody>
+</table>
+
+<div class="note">
+  <b>時間都是當地時間。</b>泰國比台灣慢 1 小時，印度比台灣慢 2 小時 30 分。<br>
+  以上為預定行程，<b>實際安排以仁波切前一日宣布為準</b>。
+</div>
+
+<h2>同行的人</h2>
+<table class="plain">
+  <thead><tr><th>成員</th><th>人數</th><th>在菩提迦耶</th></tr></thead>
+  <tbody>
+    <tr><td><b>噶奇美多傑仁波切</b><br>帶領全程</td><td class="n">1</td><td>9/23–9/27</td></tr>
+    <tr><td><b>竹奔嘉瓦法師</b><br>瑪南閉關中心住錫指導上師，應仁波切之邀同行</td><td class="n">1</td><td>9/23–9/27</td></tr>
+    <tr><td><b>Dorjee</b><br>隨行接待竹奔嘉瓦法師</td><td class="n">1</td><td>9/23–9/27</td></tr>
+    <tr><td><b>台灣團</b></td><td class="n">10</td><td>9/23–9/27</td></tr>
+    <tr><td><b>越南中心</b></td><td class="n">2</td><td>9/24 起會合</td></tr>
+  </tbody>
+</table>
+<div class="note">
+  名單與雙人房的同房配對在 LINE 群組公布。作息上有特別需求，請先告訴我們。
+</div>
+
+
+<h2>緊急電話</h2>
+<table class="plain">
+  <tr><td><b>印度緊急電話</b>　警察、救護、消防</td><td class="n"><b>112</b></td></tr>
+  <tr><td><b>駐印度台北經濟文化中心</b>　急難救助</td><td class="n"><b>+91 98105 02610</b></td></tr>
+  <tr><td><b>外交部緊急聯絡中心</b>　從國外撥打</td><td class="n">+886 800 085 095</td></tr>
+  <tr><td><b>NORTHIN Hotel</b>　加爾各答</td><td class="n">+91 87778 00177</td></tr>
+  <tr><td><b>Niranjana Hotel</b>　菩提迦耶</td><td class="n">+91 631 2200475</td></tr>
+  <tr><td><b>團體群組</b></td><td>LINE「2026 GCDR菩提伽耶團」／WhatsApp 群組</td></tr>
+</table>
+
+<div class="packpage">
+  <div class="ptop"><h1>打包清單</h1></div>
+  <p class="hint">全程用 <b>15 公斤</b>打包。國際線給 23 公斤，但印度國內線只有 15 公斤，行李要在加爾各答領出重新過磅。手提一件 7 公斤加一個貼身小包。</p>
+  <div class="packcols">
+    <div class="packgrp">
+      <h3>證件<em>每樣印兩份，手機與雲端各存一份</em></h3>
+      <ul>
+        <li>護照<small>效期需超過 2027 年 3 月 22 日，兩頁以上空白</small></li>
+        <li>印度簽證列印本<small>英文拼音與護照一致</small></li>
+        <li>機票行程單<small>國際線與國內線兩張都要</small></li>
+        <li>飯店訂房單</li>
+        <li>保單與 24 小時緊急電話</li>
+        <li>電子入境卡 QR code<small>存手機，也印一份</small></li>
+        <li>證件照數張</li>
+      </ul>
+    </div>
+    <div class="packgrp">
+      <h3>衣物<em>全程 25 至 33 度，又濕又熱</em></h3>
+      <ul>
+        <li>輕薄長袖上衣、長褲<small>防曬防蚊，進佛塔需莊重</small></li>
+        <li>快乾排汗衣物<small>多帶幾套</small></li>
+        <li>好走、容易脫的鞋<small>大塔要脫鞋</small></li>
+        <li>薄外套、帽子、雨具</li>
+        <li>不用帶厚外套、發熱衣、圍巾</li>
+      </ul>
+    </div>
+    <div class="packgrp">
+      <h3>藥品</h3>
+      <ul>
+        <li>個人常用藥<small>長期用藥附英文藥單</small></li>
+        <li>暈車藥<small>9/25 上車前半小時吃</small></li>
+        <li>腸胃藥</li>
+        <li>退燒、止痛、過敏、感冒藥</li>
+        <li>防蚊液、OK 繃</li>
+      </ul>
+    </div>
+    <div class="packgrp">
+      <h3>盥洗與隨身</h3>
+      <ul>
+        <li>衛生紙<small>印度廁所通常沒有</small></li>
+        <li>濕紙巾、乾洗手、口罩</li>
+        <li>手電筒或頭燈<small>五點出門天未亮，當地常停電</small></li>
+        <li>零錢包<small>大塔要寄放手機與背包</small></li>
+        <li>小鎖</li>
+        <li>個人盥洗用品</li>
+      </ul>
+    </div>
+    <div class="packgrp">
+      <h3>電器</h3>
+      <ul>
+        <li>萬用轉接頭<small>220V、圓形三腳，買之前確認</small></li>
+        <li>充電器、充電線、多孔插座</li>
+        <li>行動電源<small>只能手提，不可託運</small></li>
+        <li>不要帶變壓器<small>容易燒壞電器</small></li>
+      </ul>
+    </div>
+    <div class="packgrp">
+      <h3>其他</h3>
+      <ul>
+        <li>泡麵、沖泡飲品</li>
+        <li>美金現鈔、信用卡<small>到菩提迦耶再換盧比</small></li>
+        <li>小費 1,000 盧比<small>包車費不含小費</small></li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<p class="foot">☸　願此行順利圓滿，眾生同霑法益　☸</p>
+
+</div>
+
+</body>
+</html>
