@@ -34,6 +34,7 @@ body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--sans);f
 .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(20rem,1fr));gap:.9rem}
 .card{border:1px solid var(--rule);border-radius:4px;padding:.85rem .95rem;background:var(--paper)}
 .card.wide{grid-column:1/-1}
+.pg{display:contents}
 .card h2{
   font-family:var(--sans);font-size:0.88rem;font-weight:700;letter-spacing:.12em;
   margin:0 0 .55rem;color:var(--paper);background:var(--maroon);
@@ -80,8 +81,10 @@ b{font-weight:700}
   .top p{font-size:8.4pt}
   .top .who{font-size:7.2pt;margin-bottom:1mm}
 
-  /* 單欄，一張卡就是一個不可分割的區塊 */
+  /* 每個 .pg 就是一頁，內容由我決定，不讓瀏覽器自己斷 */
   .grid{display:block}
+  .pg{display:block;break-after:page;page-break-after:always;break-inside:avoid}
+  .pg:last-of-type{break-after:auto;page-break-after:auto}
   .card{
     break-inside:avoid;page-break-inside:avoid;
     padding:2.4mm 3mm;margin:0 0 3mm;border:.6pt solid var(--rule);border-radius:1mm;
@@ -116,14 +119,13 @@ b{font-weight:700}
 </div>
 
 <div class="grid">
-
+<section class="pg">
   <div class="card warn">
     <h2>集合</h2>
     <p class="big">9/22（二）10:30–11:00</p>
     <p><b>桃園國際機場　第一航廈</b></p>
     <p>看出境看板找 <b class="hl">TG633</b> 的報到櫃檯，櫃檯號碼當天才公布。</p>
   </div>
-
   <div class="card warn">
     <h2>出發前一定要辦</h2>
     <table>
@@ -133,7 +135,6 @@ b{font-weight:700}
       <tr><td class="n">出發前</td><td>自己投保旅平險，要含海外突發疾病醫療</td></tr>
     </table>
   </div>
-
   <div class="card wide">
     <h2>全程班機</h2>
     <table>
@@ -149,7 +150,9 @@ b{font-weight:700}
     </table>
     <p style="margin-top:.5rem"><b>時間都是當地時間。</b>泰國比台灣慢 1 小時，印度慢 2 小時 30 分。</p>
   </div>
+</section>
 
+<section class="pg">
   <div class="card warn">
     <h2>行李</h2>
     <p class="big">15 公斤</p>
@@ -158,7 +161,6 @@ b{font-weight:700}
     <p class="hl">行動電源不可託運，只能手提，機上禁止充電。</p>
     <p class="hl">電子菸禁止帶進印度，留在台灣。</p>
   </div>
-
   <div class="card">
     <h2>入境印度要拿出來的三樣</h2>
     <ul>
@@ -169,7 +171,6 @@ b{font-weight:700}
     <p style="margin-top:.5rem">移民官問來做什麼，回答 <b>Buddhist pilgrimage</b>（佛教朝聖）。</p>
     <p><b>行李一定要在加爾各答領出來</b>，國內線不直掛。</p>
   </div>
-
   <div class="card">
     <h2>入境卡三個容易填錯的欄位</h2>
     <table>
@@ -179,7 +180,9 @@ b{font-weight:700}
     </table>
     <p style="margin-top:.5rem">indianvisaonline.gov.in/earrival　<b>官網不收費。</b></p>
   </div>
+</section>
 
+<section class="pg">
   <div class="card">
     <h2>摩訶菩提大塔</h2>
     <ul>
@@ -190,14 +193,15 @@ b{font-weight:700}
     </ul>
     <p style="margin-top:.5rem">手機寄放時聯絡不上同伴，<b>出門前先講好集合的時間與地點</b>。</p>
   </div>
-
   <div class="card">
     <h2>錢</h2>
     <p><b>在台灣換好美金現鈔帶去</b>，到菩提迦耶再換盧比。不要在機場換，匯率差。</p>
     <p class="hl">小費每人準備 1,000 盧比。包車費不含小費。</p>
     <p>很多店只收現金。加爾各答第一晚的飯店押金中心已備妥，不用先換。</p>
   </div>
+</section>
 
+<section class="pg">
   <div class="card">
     <h2>身體</h2>
     <ul>
@@ -208,7 +212,6 @@ b{font-weight:700}
       <li>暈車藥在上車前半小時吃（9/25 車程長）</li>
     </ul>
   </div>
-
   <div class="card wide">
     <h2>住哪裡</h2>
     <table>
@@ -224,7 +227,6 @@ b{font-weight:700}
       </tr>
     </table>
   </div>
-
   <div class="card wide warn">
     <h2>出事的時候打給誰</h2>
     <table>
@@ -234,6 +236,7 @@ b{font-weight:700}
       <tr><td><b>團體群組</b></td><td>LINE「2026 GCDR菩提伽耶團」／WhatsApp 群組<br><span style="color:var(--muted)">印度的 LINE 不一定穩，WhatsApp 比較通</span></td></tr>
     </table>
   </div>
+</section>
 
 </div>
 
