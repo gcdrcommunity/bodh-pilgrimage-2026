@@ -66,22 +66,39 @@ b{font-weight:700}
 }
 .actbtn:hover{background:var(--maroon);color:var(--paper)}
 .actbtn:focus-visible{outline:2px solid var(--ochre);outline-offset:2px}
-@media print{.acts{display:none!important}}
-
 @media print{
-  @page{size:A4;margin:11mm}
-  :root{--paper:#fff;--sunk:#f3f3f1;--ink:#000;--ink-2:#222;--muted:#555;--rule:#999;
+  /* A5 直式：A4 選「每張 2 頁、雙面列印」，對折就是一本小冊 */
+  @page{size:A5 portrait;margin:9mm}
+  :root{--paper:#fff;--sunk:#f2f2f0;--ink:#000;--ink-2:#222;--muted:#555;--rule:#8a8a8a;
         --maroon:#6E2626;--ochre:#7d5612;--leaf:#2b5340}
-  body{font-size:9.4pt;line-height:1.45}
+  body{font-size:8.7pt;line-height:1.42}
   .sheet{max-width:none;padding:0}
-  .grid{gap:5mm;grid-template-columns:1fr 1fr}
-  .card{break-inside:avoid;padding:3mm 3.5mm}
-  .card h2{font-size:7.4pt}
-  .big{font-size:13pt}
-  .top h1{font-size:16pt}
-  table{font-size:8.6pt}
-  td,th{padding:1mm 1.5mm}
+  .acts{display:none!important}
+
+  .top{border-bottom:2.5pt solid var(--maroon);padding-bottom:2mm;margin-bottom:3mm;break-after:avoid}
+  .top h1{font-size:14pt;margin-bottom:1mm}
+  .top p{font-size:8.4pt}
+  .top .who{font-size:7.2pt;margin-bottom:1mm}
+
+  /* 單欄，一張卡就是一個不可分割的區塊 */
+  .grid{display:block}
+  .card{
+    break-inside:avoid;page-break-inside:avoid;
+    padding:2.4mm 3mm;margin:0 0 3mm;border:.6pt solid var(--rule);border-radius:1mm;
+  }
+  .card.warn{border-width:1.4pt;border-color:var(--maroon)}
+  .card h2{font-size:7pt;padding:.7mm 1.6mm .5mm;margin-bottom:1.6mm}
+  .card p{margin-bottom:1.2mm}
+  .big{font-size:11.5pt}
+  ul{padding-left:4mm}
+  li{margin:.4mm 0}
+  table{font-size:8.2pt}
+  td,th{padding:.8mm 1.2mm}
+  th{font-size:6.8pt}
+
+  .foot{margin-top:3mm;padding-top:2mm;font-size:7.6pt;break-inside:avoid}
 }
+
 </style>
 </head>
 <body>
@@ -94,6 +111,8 @@ b{font-weight:700}
   <h1>菩提迦耶朝聖　隨身重點卡</h1>
   <p>2026 年 9 月 22 日至 28 日　‧　噶奇美多傑仁波切帶領　‧　詳細說明見完整手冊</p>
   <p class="acts" style="margin-top:.7rem"><button class="actbtn" type="button" onclick="window.print()">🖨 列印</button><a class="actbtn" href="../files/菩提迦耶隨身重點_20260905.pdf" download>⬇ 下載 PDF</a></p>
+  <p class="acts" style="margin-top:.5rem;font-size:.88rem;color:var(--muted);display:block">
+  列印時選 <b>A4 紙、每張 2 頁、雙面</b>，印出來對折就是一本隨身小冊。</p>
 </div>
 
 <div class="grid">
